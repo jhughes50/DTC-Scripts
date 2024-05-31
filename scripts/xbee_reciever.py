@@ -7,7 +7,7 @@
 import serial
 import psutil
 
-DEV = "/dev/ttyUSB0"
+DEV = "/dev/serial/by-id/usb-FTDI_FT231X_USB_UART_D30DN9UC-if00-port0"
 BAUDRATE = 9600
 
 NORMAL = "7e000b8801495300010002000000d7"
