@@ -6,6 +6,7 @@
 
 import serial
 import psutil
+import rospy
 
 DEV = "/dev/serial/by-id/usb-FTDI_FT231X_USB_UART_D30DN9UC-if00-port0"
 BAUDRATE = 9600
@@ -45,4 +46,5 @@ def main():
     xbee_ser.close()
 
 if __name__ == "__main__":
+    rospy.init_node("xbee_reciever")
     main()
